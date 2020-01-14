@@ -1,9 +1,15 @@
 package com.dias.demoproj;
 
 import org.testng.annotations.*;
+
+import com.dias.demoproj.constants.LoginOR;
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Setup {
@@ -31,14 +37,12 @@ public class Setup {
 				.println(System.getProperty(CHROME_WEBDRIVE_PROPERTY_KEY));
 	 driver = new ChromeDriver();
 	 driver.get("https://www.phptravels.net/");
-	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS); 
+	 driver.manage().window().maximize();
+	 //driver.manage().timeouts().implicitlyWait(50,TimeUnit.MILLISECONDS); 
+	 WebDriverWait wait=new WebDriverWait(driver, 20);
+	 wait.until(ExpectedConditions.visibilityOfElementLocated(LoginOR.MYACC_BTN));
+	 	
 	}
 
-	/**
-	*After Suite
-	*/
-	@AfterSuite
-	public  void afterClass() {
-	driver.quit();
-	}
+	
 }

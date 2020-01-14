@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="dias.learning" parallel="false" preserve-order="false" verbose="1" thread-count="1" >
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [dias.learning]">
   <test name="Setup">
     <classes>
       <class name="com.dias.demoproj.Setup"/>
     </classes>
-  </test> 
+  </test> <!-- Setup -->
   <test name="Test">
     <classes>
       <class name="com.dias.steps.Login"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Failed suite [dias.learning] -->

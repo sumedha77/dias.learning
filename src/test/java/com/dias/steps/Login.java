@@ -1,5 +1,11 @@
 package com.dias.steps;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
@@ -13,11 +19,18 @@ public class Login extends Setup{
 	public void logintest()
 	{
 	driver.findElement(LoginOR.MYACC_BTN).click();
-	driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS); 
+	//driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS); 
 	
 	}
 	
-	
+//	
+//	/**
+//	*After Suite
+//	*/
+//	@AfterSuite
+//	public  void afterClass() {
+//	driver.quit();
+//	}
 	
 	
 }
