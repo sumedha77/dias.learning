@@ -8,7 +8,7 @@
   </test> <!-- Setup -->
   <test name="Test">
     <classes>
-      <class name="com.dias.steps.Login"/>
+      <class name="com.dias.steps.Search"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [dias.learning] -->

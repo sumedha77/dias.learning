@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="dias.learning" duration-ms="151" started-at="2020-01-14T08:15:17Z" finished-at="2020-01-14T08:15:18Z">
+  <suite name="dias.learning" duration-ms="2378" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:41Z">
     <groups>
     </groups>
-    <test name="Setup" duration-ms="2" started-at="2020-01-14T08:15:17Z" finished-at="2020-01-14T08:15:17Z">
+    <test name="Setup" duration-ms="2" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:38Z">
     </test> <!-- Setup -->
-    <test name="Test" duration-ms="118" started-at="2020-01-14T08:15:17Z" finished-at="2020-01-14T08:15:18Z">
-      <class name="com.dias.steps.Login">
-        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.dias.steps.Login@1fbc7afb]" name="getDriver" is-config="true" duration-ms="10017" started-at="2020-01-14T13:45:07Z" finished-at="2020-01-14T13:45:17Z">
+    <test name="Test" duration-ms="2357" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:41Z">
+      <class name="com.dias.steps.Search">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.dias.steps.Search@1fbc7afb]" name="getDriver" is-config="true" duration-ms="12362" started-at="2020-01-21T14:02:26Z" finished-at="2020-01-21T14:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:com.dias.steps.Login@1fbc7afb]" name="logintest" duration-ms="114" started-at="2020-01-14T13:45:17Z" finished-at="2020-01-14T13:45:18Z">
+        <test-method status="PASS" signature="search()[pri:0, instance:com.dias.steps.Search@1fbc7afb]" name="search" duration-ms="2353" started-at="2020-01-21T14:02:38Z" finished-at="2020-01-21T14:02:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-      </class> <!-- com.dias.steps.Login -->
+        </test-method> <!-- search -->
+      </class> <!-- com.dias.steps.Search -->
     </test> <!-- Test -->
   </suite> <!-- dias.learning -->
 </testng-results>

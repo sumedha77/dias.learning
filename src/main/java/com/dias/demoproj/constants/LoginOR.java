@@ -8,6 +8,6 @@ public class LoginOR {
 	public static final By USR_NM= By.name("username");
 	public static final By PASSWORD= By.name("password");
 	public static final By SUBMIT_BTN= By.xpath("//button[@type='submit']");
-	public static final By CHAT_WIG= By.xpath("//*[@id='widget-global-r7kff8pnt3']//span[contains(@class,'Linkify')]");
+	
 	
 }
