@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="dias.learning" duration-ms="2378" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:41Z">
+  <suite name="dias.learning" duration-ms="865" started-at="2020-01-22T08:40:42Z" finished-at="2020-01-22T08:40:43Z">
     <groups>
     </groups>
-    <test name="Setup" duration-ms="2" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:38Z">
+    <test name="Setup" duration-ms="3" started-at="2020-01-22T08:40:42Z" finished-at="2020-01-22T08:40:42Z">
     </test> <!-- Setup -->
-    <test name="Test" duration-ms="2357" started-at="2020-01-21T08:32:38Z" finished-at="2020-01-21T08:32:41Z">
-      <class name="com.dias.steps.Search">
-        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.dias.steps.Search@1fbc7afb]" name="getDriver" is-config="true" duration-ms="12362" started-at="2020-01-21T14:02:26Z" finished-at="2020-01-21T14:02:38Z">
+    <test name="Test" duration-ms="843" started-at="2020-01-22T08:40:42Z" finished-at="2020-01-22T08:40:43Z">
+      <class name="com.dias.utilities.CommonUtility">
+        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.dias.utilities.CommonUtility@1fbc7afb]" name="setDriver" is-config="true" duration-ms="6595" started-at="2020-01-22T14:10:35Z" finished-at="2020-01-22T14:10:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getDriver -->
-        <test-method status="PASS" signature="search()[pri:0, instance:com.dias.steps.Search@1fbc7afb]" name="search" duration-ms="2353" started-at="2020-01-21T14:02:38Z" finished-at="2020-01-21T14:02:41Z">
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="chat()[pri:0, instance:com.dias.utilities.CommonUtility@1fbc7afb]" name="chat" duration-ms="839" started-at="2020-01-22T14:10:42Z" finished-at="2020-01-22T14:10:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- com.dias.steps.Search -->
+        </test-method> <!-- chat -->
+      </class> <!-- com.dias.utilities.CommonUtility -->
     </test> <!-- Test -->
   </suite> <!-- dias.learning -->
 </testng-results>

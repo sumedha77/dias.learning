@@ -5,16 +5,17 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.dias.demoproj.Setup;
 import com.dias.demoproj.constants.GlobalObjects;
 
-public class Search extends Setup{
+public class Search{
 	
 		@Test
-		public void search() throws InterruptedException{
+		public void search(WebDriver driver) throws InterruptedException{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='cookyGotItBtnBox']/div/button")).click();
 		driver.findElement(By.xpath("//*[@id='s2id_autogen8']/a/span[1]")).click();

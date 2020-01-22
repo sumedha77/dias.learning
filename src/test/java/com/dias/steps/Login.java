@@ -1,6 +1,7 @@
 package com.dias.steps;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,21 +17,14 @@ import com.dias.demoproj.constants.LoginOR;
 public class Login extends Setup{
 
 	@Test
-	public void logintest()
+	public void logintest(WebDriver driver)
 	{
 	driver.findElement(LoginOR.MYACC_BTN).click();
 	//driver.manage().timeouts().implicitlyWait(10,TimeUnit.MILLISECONDS); 
 	
 	}
 	
-//	
-//	/**
-//	*After Suite
-//	*/
-//	@AfterSuite
-//	public  void afterClass() {
-//	driver.quit();
-//	}
+
 	
 	
 }
