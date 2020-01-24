@@ -8,7 +8,8 @@
   </test> 
   <test name="Test">
     <classes>
-      <class name="com.dias.utilities.CommonUtility"/>
+      <class name="com.dias.steps.ChatWind"/>
+     	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

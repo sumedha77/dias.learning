@@ -21,17 +21,11 @@ public class CommonUtility extends Setup{
 	
 	static int[] WAIT={10,20,50,80};
 	
-	@Test
-	public void chat() throws InterruptedException{
-	
-	/* This method is to select multiple checkboxes/*
-	 * 	
-	 */
-	//Selectchkbox(getDriver());
-	//SelectDrpdown(getDriver());
-	//Dragndrop(getDriver());
-		Imghover(getDriver());
+	public static void MoveToiFrame(WebElement Locator) throws InterruptedException{
+		driver.switchTo().frame(Locator);
+		System.out.println("You are switched to iframe");
 	}
+	
 	
 	public static void Selectchkbox(WebDriver driver) throws InterruptedException{
 	driver.findElement(GlobalObjects.CHKBOX_link).click();
@@ -39,9 +33,13 @@ public class CommonUtility extends Setup{
 	wait.until(ExpectedConditions.visibilityOfElementLocated(GlobalObjects.FOOTER));
 	
 	List <WebElement> chkbox =driver.findElements(GlobalObjects.CHKBOX);
+	chkbox.size();
 	
 	for (WebElement we:chkbox) { 
     //simulate visual movement
+		if(we.isSelected()){
+			return;
+		}
     we.click();
       }
 	}

@@ -8,7 +8,17 @@
   </test> <!-- Setup -->
   <test name="Test">
     <classes>
-      <class name="com.dias.utilities.CommonUtility"/>
+      <class name="com.dias.steps.ChatWind"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.dias.steps.ChatWind">
+        <methods>
+          <include name="setDriver"/>
+          <include name="chat"/>
+        </methods>
+      </class> <!-- com.dias.steps.ChatWind -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [dias.learning] -->
