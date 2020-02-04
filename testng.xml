@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="dias.learning" parallel="false" preserve-order="false" verbose="1" thread-count="1" >
-  <test name="Setup">
-    <classes>
-      <class name="com.dias.demoproj.Setup"/>
+<suite name="dias.learning" parallel="tests" preserve-order="false" verbose="1" thread-count="2" >
+ <test name="Firefox Test">
+   <parameter name="browser" value="firefox"/>
+      <classes>
+     	<class name="com.dias.demoproj.Setup"/>
+      	<class name="com.dias.steps.SignupTest"/>
+    </classes>
+  </test>
+   <test name="Chrome Test">
+    <parameter name="browser" value="chrome"/>
+      <classes>
+     <class name="com.dias.demoproj.Setup"/>
+      	<class name="com.dias.steps.UserRegister"/>
     </classes>
   </test> 
-  <test name="Test">
-    <classes>
-      <class name="com.dias.steps.ChatWind"/>
-     	
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> 

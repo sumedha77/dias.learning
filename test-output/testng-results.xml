@@ -1,43 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="dias.learning" duration-ms="11999" started-at="2020-01-24T09:18:00Z" finished-at="2020-01-24T09:18:12Z">
+  <suite name="dias.learning" duration-ms="22894" started-at="2020-02-04T09:22:30Z" finished-at="2020-02-04T09:22:53Z">
     <groups>
     </groups>
-    <test name="Setup" duration-ms="2" started-at="2020-01-24T09:18:00Z" finished-at="2020-01-24T09:18:00Z">
-    </test> <!-- Setup -->
-    <test name="Test" duration-ms="11977" started-at="2020-01-24T09:18:00Z" finished-at="2020-01-24T09:18:12Z">
-      <class name="com.dias.steps.ChatWind">
-        <test-method status="PASS" signature="setDriver()[pri:0, instance:com.dias.steps.ChatWind@1fbc7afb]" name="setDriver" is-config="true" duration-ms="3620" started-at="2020-01-24T14:47:57Z" finished-at="2020-01-24T14:48:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method status="FAIL" signature="chat()[pri:0, instance:com.dias.steps.ChatWind@1fbc7afb]" name="chat" duration-ms="11972" started-at="2020-01-24T14:48:00Z" finished-at="2020-01-24T14:48:12Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+    <test name="Firefox Test" duration-ms="12740" started-at="2020-02-04T09:22:30Z" finished-at="2020-02-04T09:22:43Z">
+      <class name="com.dias.steps.SignupTest">
+        <test-method status="FAIL" signature="signUp()[pri:0, instance:com.dias.steps.SignupTest@47f37ef1]" name="signUp" duration-ms="7945" started-at="2020-02-04T14:52:35Z" finished-at="2020-02-04T14:52:43Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[contains(@id='widget-global')]//img)] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(@id='widget-global')]//img)]' is not a valid XPath expression.
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[Element <a class="dropdown-item active tr" href="https://www.phptravels.net/login"> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SUMEDHA-WANI', ip: '192.168.97.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SUMEDH~1.WAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 410539a40d6dcf5a259ad28e493b4c14
-*** Element info: {Using=xpath, value=//div[contains(@id='widget-global')]//img)]}]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14400, moz:profile: C:\Users\sumedha.wani\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: efaf9777-be96-425a-8614-12ca65353e51]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[contains(@id='widget-global')]//img)] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[contains(@id='widget-global')]//img)]' is not a valid XPath expression.
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="dropdown-item active tr" href="https://www.phptravels.net/login"> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SUMEDHA-WANI', ip: '192.168.97.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SUMEDH~1.WAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 410539a40d6dcf5a259ad28e493b4c14
-*** Element info: {Using=xpath, value=//div[contains(@id='widget-global')]//img)]}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14400, moz:profile: C:\Users\sumedha.wani\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: efaf9777-be96-425a-8614-12ca65353e51
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,15 +34,16 @@ Session ID: 410539a40d6dcf5a259ad28e493b4c14
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.dias.demoproj.constants.ChatWidget.chatwid(ChatWidget.java:29)
-	at com.dias.steps.ChatWind.chat(ChatWind.java:23)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.dias.demoproj.constants.LoginOR.signlogin(LoginOR.java:33)
+	at com.dias.steps.SignupTest.signUp(SignupTest.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,24 +57,54 @@ Session ID: 410539a40d6dcf5a259ad28e493b4c14
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chat -->
-      </class> <!-- com.dias.steps.ChatWind -->
-    </test> <!-- Test -->
+        </test-method> <!-- signUp -->
+      </class> <!-- com.dias.steps.SignupTest -->
+      <class name="com.dias.demoproj.Setup">
+        <test-method status="PASS" signature="setDriver(java.lang.String)[pri:0, instance:com.dias.demoproj.Setup@3c5a99da]" name="setDriver" is-config="true" duration-ms="4789" started-at="2020-02-04T14:52:30Z" finished-at="2020-02-04T14:52:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+      </class> <!-- com.dias.demoproj.Setup -->
+    </test> <!-- Firefox Test -->
+    <test name="Chrome Test" duration-ms="22894" started-at="2020-02-04T09:22:30Z" finished-at="2020-02-04T09:22:53Z">
+      <class name="com.dias.steps.UserRegister">
+        <test-method status="PASS" signature="RegisterUser()[pri:0, instance:com.dias.steps.UserRegister@2d209079]" name="RegisterUser" duration-ms="19288" started-at="2020-02-04T14:52:34Z" finished-at="2020-02-04T14:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+      </class> <!-- com.dias.steps.UserRegister -->
+      <class name="com.dias.demoproj.Setup">
+        <test-method status="PASS" signature="setDriver(java.lang.String)[pri:0, instance:com.dias.demoproj.Setup@2f7c7260]" name="setDriver" is-config="true" duration-ms="3600" started-at="2020-02-04T14:52:30Z" finished-at="2020-02-04T14:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+      </class> <!-- com.dias.demoproj.Setup -->
+    </test> <!-- Chrome Test -->
   </suite> <!-- dias.learning -->
 </testng-results>

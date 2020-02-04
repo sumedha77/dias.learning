@@ -13,7 +13,7 @@ import com.dias.demoproj.WebdriverInstance;
 import com.dias.utilities.CommonUtility;
 
 public class ChatWidget extends WebdriverInstance {
-	@FindBy(xpath="//div[contains(@id='widget-global')]//img]")
+	@FindBy(xpath="//div[contains(@id,'widget-global')]//img")
 	private WebElement CHAT_WIG;
 	@FindBy(xpath="//*[@id='chat-widget-container']/iframe[contains(@name,'chat-widget')]']")
 	private WebElement CHAT_WIG_FRAME;
@@ -26,6 +26,7 @@ public class ChatWidget extends WebdriverInstance {
 	
 	public void chatwid() throws InterruptedException{
 		CommonUtility.MoveToiFrame(this.CHAT_WIG_IFRAME);
+		CommonUtility.VerifyPresenceOfElement(this.CHAT_WIG);
 		this.CHAT_WIG.click();
 			
 		}

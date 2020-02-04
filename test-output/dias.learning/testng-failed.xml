@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [dias.learning]">
-  <test name="Setup">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [dias.learning]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Firefox Test">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.dias.demoproj.Setup"/>
+      <class name="com.dias.steps.SignupTest"/>
     </classes>
-  </test> <!-- Setup -->
-  <test name="Test">
+  </test> <!-- Firefox Test -->
+  <test name="Chrome Test">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.dias.steps.ChatWind"/>
+      <class name="com.dias.demoproj.Setup"/>
+      <class name="com.dias.steps.UserRegister"/>
     </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)">
+  </test> <!-- Chrome Test -->
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.dias.steps.ChatWind">
+      <class name="com.dias.steps.SignupTest">
+        <methods>
+          <include name="signUp"/>
+        </methods>
+      </class> <!-- com.dias.steps.SignupTest -->
+      <class name="com.dias.demoproj.Setup">
         <methods>
           <include name="setDriver"/>
-          <include name="chat"/>
+          <include name="setDriver"/>
         </methods>
-      </class> <!-- com.dias.steps.ChatWind -->
+      </class> <!-- com.dias.demoproj.Setup -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [dias.learning] -->

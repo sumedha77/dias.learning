@@ -14,7 +14,7 @@ import com.dias.demoproj.constants.GlobalObjects;
 
 public class Search{
 	
-		@Test
+	/*	@Test
 		public void search(WebDriver driver) throws InterruptedException{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id='cookyGotItBtnBox']/div/button")).click();
@@ -32,5 +32,5 @@ public class Search{
 	        return;	
 	        }
 		}
-	}
+	}*/
 }

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,24 @@
                     <div class="method-list-content failed suite-dias.learning">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-dias.learning" title="com.dias.steps.ChatWind" hash-for-method="chat">chat</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-dias.learning" title="com.dias.steps.SignupTest" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-dias.learning -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-dias.learning" class="hide-methods passed suite-dias.learning"> (hide)</a> <!-- hide-methods passed suite-dias.learning -->
+                      <a href="#" panel-name="suite-dias.learning" class="show-methods passed suite-dias.learning"> (show)</a> <!-- show-methods passed suite-dias.learning -->
+                    </span>
+                    <div class="method-list-content passed suite-dias.learning">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-dias.learning" title="com.dias.steps.UserRegister" hash-for-method="RegisterUser">RegisterUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-dias.learning -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -120,45 +134,57 @@
           <div class="suite-dias.learning-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.dias.steps.ChatWind</span>
+              <span class="class-name">com.dias.steps.SignupTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="chat">
-                  </a> <!-- chat -->
-                  <span class="method-name">chat</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[contains(@id=&apos;widget-global&apos;)]//img)] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[contains(@id=&apos;widget-global&apos;)]//img)]&apos; is not a valid XPath expression.
-  (Session info: chrome=79.0.3945.130)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;dropdown-item active tr&quot; href=&quot;https://www.phptravels.net/login&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;SUMEDHA-WANI&apos;, ip: &apos;192.168.97.85&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\SUMEDH~1.WAN\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 410539a40d6dcf5a259ad28e493b4c14
-*** Element info: {Using=xpath, value=//div[contains(@id=&apos;widget-global&apos;)]//img)]}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 14400, moz:profile: C:\Users\sumedha.wani\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: efaf9777-be96-425a-8614-12ca65353e51
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at com.dias.demoproj.constants.ChatWidget.chatwid(ChatWidget.java:29)
-	at com.dias.steps.ChatWind.chat(ChatWind.java:23)
-... Removed 28 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at com.dias.demoproj.constants.LoginOR.signlogin(LoginOR.java:33)
+	at com.dias.steps.SignupTest.signUp(SignupTest.java:13)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-dias.learning-class-failed -->
+          <div class="suite-dias.learning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dias.steps.UserRegister</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterUser">
+                  </a> <!-- RegisterUser -->
+                  <span class="method-name">RegisterUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-dias.learning-class-passed -->
         </div> <!-- panel dias.learning -->
         <div panel-name="test-xml-dias.learning" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -168,17 +194,21 @@ Session ID: 410539a40d6dcf5a259ad28e493b4c14
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;dias.learning&quot;&gt;
-  &lt;test name=&quot;Setup&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;dias.learning&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Firefox Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.dias.demoproj.Setup&quot;/&gt;
+      &lt;class name=&quot;com.dias.steps.SignupTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Setup --&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
+  &lt;test name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.dias.steps.ChatWind&quot;/&gt;
+      &lt;class name=&quot;com.dias.demoproj.Setup&quot;/&gt;
+      &lt;class name=&quot;com.dias.steps.UserRegister&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
 &lt;/suite&gt; &lt;!-- dias.learning --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,10 +220,10 @@ Session ID: 410539a40d6dcf5a259ad28e493b4c14
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Setup (1 class)</span>
+                <span class="test-name">Firefox Test (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Chrome Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,16 +249,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'chat')
-data.setCell(0, 2, 'com.dias.steps.ChatWind')
-data.setCell(0, 3, 11972);
+data.setCell(0, 1, 'RegisterUser')
+data.setCell(0, 2, 'com.dias.steps.UserRegister')
+data.setCell(0, 3, 19288);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signUp')
+data.setCell(1, 2, 'com.dias.steps.SignupTest')
+data.setCell(1, 3, 7945);
 window.suiteTableData['dias.learning']= { tableData: data, tableDiv: 'times-div-dias.learning'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-dias.learning">
               </div> <!-- times-div-dias.learning -->
             </div> <!-- times-div -->
@@ -243,9 +277,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-dias.learning" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dias.steps.UserRegister</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.dias.steps.SignupTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-dias.learning" class="panel">
@@ -254,16 +302,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.dias.steps.ChatWind</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setDriver</span>
+              <div class="chronological-class-name">com.dias.demoproj.Setup</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setDriver(firefox)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setDriver(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.dias.steps.UserRegister</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">RegisterUser</span>
+                <span class="method-start">3603 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.dias.steps.SignupTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">chat</span>
-                <span class="method-start">3645 ms</span>
+                <span class="method-name">signUp</span>
+                <span class="method-start">4790 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
